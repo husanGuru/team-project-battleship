@@ -16,7 +16,7 @@ export function homePage() {
       <div class="main__title">
         Игра разработана:
         <h3>husanGuru - Github <a href="https://github.com/husanGuru">husanGuru</a></h3>
-        <h3>HoneySafonovets - Github <a href="https://github.com/HoneySafonovets">HoneySafonovets</a>/h3>
+        <h3>HoneySafonovets - Github <a href="https://github.com/HoneySafonovets">HoneySafonovets</a></h3>
       </div>
 
       <p class="main__subtitle"> 
