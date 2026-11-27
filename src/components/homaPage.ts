@@ -13,13 +13,13 @@ export function homePage() {
     <header>
 
     <main class="main">
-      <div class="main__title">
-        Игра разработана:
-        <h3>husanGuru - Github <a href="https://github.com/husanGuru">husanGuru</a></h3>
-        <h3>HoneySafonovets - Github <a href="https://github.com/HoneySafonovets">HoneySafonovets</a></h3>
+      <div class="main__devs">
+        <h2 class="main__title">Игра разработана:</h2>
+        <h3 class="main__subtitle"><span>husanGuru</span> - Github <a href="https://github.com/husanGuru">husanGuru</a></h3>
+        <h3 class="main__subtitle"><span>HoneySafonovets</span> - Github <a href="https://github.com/HoneySafonovets">HoneySafonovets</a></h3>
       </div>
 
-      <p class="main__subtitle"> 
+      <p class="main__description"> 
         «Морской бой» — игра для двух участников, в которой игроки по очереди называют или сообщают иным способом координаты на карте соперника.
         Если у противника имеется корабль с этими координатами, то корабль или его палуба (дека) поражается, попавший делает ещё один ход.
         Цель игрока: первым уничтожить все корабли противника.

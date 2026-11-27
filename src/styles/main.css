@@ -20,7 +20,29 @@
   gap: 20px;
 }
 
-.main__subtitle {
+.main__devs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.main__title {
+  font-size: 24px;
+}
+
+.main__subtitle span {
+  color: var(--colorDevs);
+  font-size: 18px;
+}
+
+.main__subtitle a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.main__description {
   max-width: 100%;
   font-size: 24px;
   /* align-self: center; */
@@ -39,9 +61,6 @@
   border-radius: 20px;
   font-size: 32px;
   transition: all 0.3s ease-in;
-}
-
-.main__subtitle {
 }
 
 @media screen and (hover: hover) {
