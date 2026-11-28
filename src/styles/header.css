@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header__img {
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 100%;
+  height: 600px;
+}
+
+.header__title {
+  font-size: 32px;
+  text-decoration: underline;
+}

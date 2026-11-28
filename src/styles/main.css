@@ -1,0 +1,73 @@
+@import url('./variables.css');
+
+.container {
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1240px;
+  height: 100%;
+  color: white;
+  font-style: var(--font-main);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main__devs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.main__title {
+  font-size: 24px;
+}
+
+.main__subtitle span {
+  color: var(--colorDevs);
+  font-size: 18px;
+}
+
+.main__subtitle a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.main__description {
+  max-width: 100%;
+  font-size: 24px;
+  /* align-self: center; */
+}
+
+.main__fight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 20px;
+  width: 300px;
+  height: 100px;
+  color: var(--colorMain);
+  border: 1px solid var(--colorMain);
+  border-radius: 20px;
+  font-size: 32px;
+  transition: all 0.3s ease-in;
+}
+
+@media screen and (hover: hover) {
+  .main__fight:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    background: var(--colorMain);
+    color: var(--backColor);
+  }
+}
