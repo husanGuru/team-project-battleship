@@ -3,30 +3,40 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "workspaces": [
+    "server"
+  ],
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently -n client,server -c blue,green \"npm:dev:client\" \"npm:dev:server\"",
+    "dev:client": "vite",
+    "dev:server": "npm run dev -w server",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "lint:server": "npm run lint -w server",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,js}": [
+    "src/**/*.{ts,js}": [
       "eslint --fix",
       "prettier --write"
     ],
     "*.{css,html,json,md}": [
       "prettier --write"
+    ],
+    "server/**/*.{ts,js}": [
+      "npm run lint:fix -w server"
     ]
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^26.6.6",
+    "concurrently": "^9.1.2",
     "eslint": "^10.15.0",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17.14.0",

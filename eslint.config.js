@@ -4,7 +4,7 @@ import prettier from 'eslint-config-prettier';
 import globals from 'globals';
 
 export default tseslint.config(
-  { ignores: ['dist', 'node_modules', 'coverage'] },
+  { ignores: ['dist', 'node_modules', 'coverage', 'server'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   prettier,
@@ -12,6 +12,9 @@ export default tseslint.config(
     languageOptions: {
       globals: {
         ...globals.browser,
+      },
+      parserOptions: {
+        tsconfigRootDir: import.meta.dirname,
       },
     },
   },
